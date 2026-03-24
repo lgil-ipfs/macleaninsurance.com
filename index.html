@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ian Maclean | About Us</title>
+    <title>Maclean Insurance | Welcome</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
@@ -12,9 +12,12 @@
     <!-- HEADER -->
     <header class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo">Ian <span>Maclean</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.svg" alt="Maclean Insurance Logo" width="36" height="36">
+                Ian <span>Maclean</span>
+            </a>
             <nav class="nav-links">
-                <a href="index.html" class="active">About Us</a>
+                <a href="index.html" class="active">Welcome</a>
                 <a href="services.html">Services</a>
                 <a href="coverage.html">Coverage</a>
                 <a href="calculators.html">Calculators</a>
@@ -24,16 +27,48 @@
         </div>
     </header>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
+    <!-- WELCOME HERO -->
+    <section class="hero-welcome">
         <div class="container">
-            <h1>About Us</h1>
-            <p>Providing Quality Professional Advice Across Canada</p>
+            <div class="hero-welcome-inner">
+                <h1>Welcome to<br>Maclean <span>Insurance</span></h1>
+                <p>Strategic insurance planning tailored to your life, business, and future across Canada. Built upon professional management, rigorous due diligence, and comprehensive risk mitigation.</p>
+                <div class="hero-welcome-actions">
+                    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+                    <a href="services.html" class="btn btn-outline" style="border-color:var(--white); color:var(--white);">Explore Our Services</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- ABOUT CONTENT -->
-    <section class="section-padding">
+    <!-- QUICK COVERAGE LINKS (Requested) -->
+    <section class="coverage-highlights section-padding">
+        <div class="container text-center">
+            <h2 class="mb-2" style="font-size: 2.2rem; color: var(--primary);">Instant Coverage Options</h2>
+            <p class="mb-4" style="color: var(--text-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto 3rem;">Access health, dental, and premium travel insurance with direct quotes from industry-leading partners.</p>
+            
+            <div class="coverage-grid">
+                <div class="coverage-box">
+                    <h3>Green Shield Canada</h3>
+                    <p>Comprehensive quotes and coverage purchases across seven distinct Health & Dental plans tailored specifically for your needs.</p>
+                    <a href="https://mygscadvantage.ca/Quote/AllProducts?mgaid=7538&oid=1316&aid=N0305" target="_blank" class="btn btn-outline">Quote Health & Dental</a>
+                </div>
+                <div class="coverage-box">
+                    <h3>Manulife Travel</h3>
+                    <p>Protect your next journey with reliable, global medical coverage and trip cancellation from one of Canada's top providers.</p>
+                    <a href="https://www.manulife-travel.ca/dist/home.html?as=wlimf" target="_blank" class="btn btn-outline">Quote Travel Insurance</a>
+                </div>
+                <div class="coverage-box">
+                    <h3>Allianz Global</h3>
+                    <p>Secure premium global travel coverage and comprehensive trip protection from Allianz Global's trusted network.</p>
+                    <a href="https://b2c.advisormax.ca/CPF7" target="_blank" class="btn btn-outline">Quote Travel Insurance</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SUMMARY -->
+    <section class="section-padding bg-light">
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
@@ -44,16 +79,17 @@
                     <div class="values-grid">
                         <div class="value-card">
                             <h3>Due Diligence</h3>
-                            <p>We operate with a thorough process to develop and evaluate financial opportunities tailored specifically to benefit our clients.</p>
+                            <p>Thorough processes evaluating tailored financial opportunities to definitively benefit our clients.</p>
                         </div>
                         <div class="value-card">
                             <h3>Strategic Partners</h3>
-                            <p>Our product suppliers must meet stringent standards for financial strength, historical performance, and premier customer service.</p>
+                            <p>Stringent standards evaluating financial strength, historical performance, and premier customer service.</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="img-placeholder">
+                        <img src="assets/logo.svg" alt="M" width="80" style="margin-bottom:1.5rem;">
                         <span>Ian Maclean</span>
                         <p>Licensed in BC, AB, ON, NB, NS, NL, SK</p>
                     </div>
@@ -73,7 +109,7 @@
                 <div>
                     <h4>Navigation</h4>
                     <div class="footer-links">
-                        <a href="index.html">About Us</a>
+                        <a href="index.html">Welcome</a>
                         <a href="services.html">Our Services</a>
                         <a href="coverage.html">Health & Travel Coverage</a>
                         <a href="calculators.html">Financial Calculators</a>
