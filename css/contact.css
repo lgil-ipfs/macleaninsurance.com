@@ -1,0 +1,119 @@
+/* CONTACT SPECIFIC STYLES */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.contact-info > p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.product-info-box {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--gold);
+}
+
+.product-info-box h3 {
+    font-size: 1.2rem;
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+}
+
+.product-info-box p {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.product-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.product-links a {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.product-links a:hover {
+    color: var(--gold);
+}
+
+.contact-form-wrap {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-form-wrap h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    transition: border-color var(--transition);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-4 { margin-top: 2rem; }
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 768px) {
+    .contact-form-wrap {
+        padding: 2rem 1.5rem;
+    }
+}

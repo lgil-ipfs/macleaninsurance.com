@@ -1,0 +1,36 @@
+/* CALCULATORS SPECIFIC STYLES */
+
+.calc-panel {
+    background: var(--white);
+    padding: 4rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 5px solid var(--gold);
+}
+
+.calc-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.calc-panel p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.calc-panel .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .calc-panel {
+        padding: 2.5rem 1.5rem;
+    }
+}

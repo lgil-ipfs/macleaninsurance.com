@@ -1,0 +1,98 @@
+/* RESOURCES SPECIFIC STYLES */
+
+.resource-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resource-category {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border-top: 4px solid var(--primary-light);
+}
+
+.resource-category h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.category-desc {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.resource-list li {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.resource-list a {
+    color: var(--primary-light);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.resource-list a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.resource-list span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* For provincial grid layout */
+.inline-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.inline-list li {
+    display: block;
+    background: var(--bg-light);
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.inline-list li:hover {
+    border-color: var(--gold);
+    box-shadow: var(--shadow-sm);
+}
+
+.inline-list a {
+    font-size: 0.95rem;
+}
+
+.inline-list a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .resource-category {
+        padding: 2rem 1.5rem;
+    }
+}

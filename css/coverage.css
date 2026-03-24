@@ -1,0 +1,72 @@
+/* COVERAGE SPECIFIC STYLES */
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.coverage-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.coverage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.cov-head {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.cov-head h2 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-light);
+    color: var(--primary-light);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--border);
+}
+
+.coverage-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.green-shield .badge {
+    background: #e6f7ec;
+    color: #0b7a35;
+    border-color: #c3ebd2;
+}
+
+.travel-manulife .badge {
+    background: #eafbe1;
+    color: #00a74b;
+    border-color: #c9f5b6;
+}
+
+.travel-allianz .badge {
+    background: #e6f0ff;
+    color: #003781;
+    border-color: #c2daff;
+}
