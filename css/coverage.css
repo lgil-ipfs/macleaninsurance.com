@@ -1,72 +1,112 @@
-/* COVERAGE SPECIFIC STYLES */
+/* COVERAGE PAGE — INNER STYLES */
 
 .coverage-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
 }
 
 .coverage-card {
-    background: var(--white);
-    padding: 2.5rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-sm);
-    transition: transform var(--transition), box-shadow var(--transition);
-    display: flex;
-    flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: all .3s var(--ease);
 }
 
 .coverage-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+.cov-logo-header {
+  background: var(--cream);
+  border-bottom: 1px solid var(--border);
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+}
+
+.cov-logo-header.dark-bg {
+  background: #001E50;
+}
+
+.cov-logo {
+  max-height: 48px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.cov-logo-header.dark-bg .cov-logo { max-height: 36px; }
+
+.cov-body {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cov-head {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
 }
 
 .cov-head h2 {
-    font-size: 1.6rem;
-    color: var(--primary);
-    margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin: 0;
 }
 
 .badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    background: var(--bg-light);
-    color: var(--primary-light);
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 50px;
-    letter-spacing: 0.05em;
-    border: 1px solid var(--border);
-}
-
-.coverage-card p {
-    color: var(--text-light);
-    line-height: 1.7;
-    margin-bottom: 2rem;
-    flex-grow: 1;
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  color: var(--text-light);
 }
 
 .green-shield .badge {
-    background: #e6f7ec;
-    color: #0b7a35;
-    border-color: #c3ebd2;
+  background: #e6f7ec;
+  color: #0b7a35;
+  border-color: #c3ebd2;
 }
 
 .travel-manulife .badge {
-    background: #eafbe1;
-    color: #00a74b;
-    border-color: #c9f5b6;
+  background: #eafbe1;
+  color: #005225;
+  border-color: #c9f5b6;
 }
 
 .travel-allianz .badge {
-    background: #e6f0ff;
-    color: #003781;
-    border-color: #c2daff;
+  background: #e6f0ff;
+  color: #001E50;
+  border-color: #c2daff;
+}
+
+.cov-body p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1.75rem;
+  flex: 1;
+  font-size: .95rem;
+}
+
+.cov-body .btn {
+  align-self: flex-start;
 }

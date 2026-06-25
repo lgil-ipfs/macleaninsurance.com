@@ -201,18 +201,9 @@ img { display: block; max-width: 100%; }
   gap: 12px;
   text-decoration: none;
 }
-.logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--blue);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-head);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--white);
+.logo-shield {
+  font-size: 22px;
+  color: var(--gold);
   flex-shrink: 0;
 }
 .logo-text {
@@ -551,22 +542,14 @@ img { display: block; max-width: 100%; }
 /* ── INSTANT COVERAGE SECTION ─────────────────────────── */
 .coverage-section {
   padding: 6rem 0;
-  background: var(--navy);
-  position: relative;
-  overflow: hidden;
+  background: var(--cream);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
-.coverage-section::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 50%, rgba(21,101,192,.2) 0%, transparent 60%);
-  pointer-events: none;
-}
-.coverage-section .wrap { position: relative; z-index: 1; }
 .coverage-header { text-align: center; margin-bottom: 4rem; }
 .coverage-header .kicker { justify-content: center; }
-.coverage-header .kicker::before { display: none; }
-.coverage-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--white); margin-bottom: 1rem; }
-.coverage-header p { font-size: 1.05rem; color: rgba(255,255,255,.7); max-width: 620px; margin: 0 auto; font-weight: 300; }
+.coverage-header h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 1rem; }
+.coverage-header p { font-size: 1.05rem; color: var(--text-light); max-width: 620px; margin: 0 auto; font-weight: 300; }
 
 .coverage-grid {
   display: grid;
@@ -574,36 +557,42 @@ img { display: block; max-width: 100%; }
   gap: 24px;
 }
 .coverage-card {
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
+  background: var(--white);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2.25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: all .3s var(--ease);
-  backdrop-filter: blur(4px);
+  box-shadow: var(--shadow-sm);
 }
 .coverage-card:hover {
-  background: rgba(255,255,255,.09);
-  border-color: rgba(197,160,89,.35);
+  border-color: var(--gold);
   transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
 }
-.coverage-icon {
-  width: 52px; height: 52px;
-  border-radius: var(--radius-sm);
-  background: rgba(21,101,192,.3);
-  border: 1px solid rgba(21,101,192,.4);
+.coverage-logo-wrap {
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  margin-bottom: 1.25rem;
-  flex-shrink: 0;
+  margin-bottom: 1.5rem;
 }
+.coverage-logo-wrap.logo-dark-bg {
+  background: #001E50;
+  border-radius: var(--radius-sm);
+  padding: 8px 16px;
+  height: auto;
+}
+.coverage-logo {
+  max-height: 48px;
+  max-width: 180px;
+  object-fit: contain;
+}
+.coverage-logo-wrap.logo-dark-bg .coverage-logo { max-height: 32px; }
 .coverage-card h3 {
   font-size: 1.3rem;
-  color: var(--white);
+  color: var(--navy);
   margin-bottom: .5rem;
 }
 .coverage-card .provider-label {
@@ -616,24 +605,42 @@ img { display: block; max-width: 100%; }
 }
 .coverage-card p {
   font-size: .9rem;
-  color: rgba(255,255,255,.65);
+  color: var(--text-light);
   line-height: 1.65;
   flex: 1;
   margin-bottom: 1.5rem;
 }
 .coverage-card .btn {
   align-self: flex-start;
-  background: var(--gold);
+  background: var(--navy);
   color: var(--white);
-  border-color: var(--gold);
+  border-color: var(--navy);
   font-size: 13px;
   padding: 10px 20px;
 }
 .coverage-card .btn:hover {
-  background: var(--gold-hover);
-  border-color: var(--gold-hover);
+  background: var(--blue);
+  border-color: var(--blue);
   transform: translateY(-2px);
 }
+.coverage-card-contact {
+  grid-column: span 2;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+  background: var(--gold-pale);
+  border-color: rgba(197,160,89,.35);
+}
+.coverage-card-contact p { margin-bottom: 0; flex: unset; }
+.coverage-card-contact .btn-contact {
+  flex-shrink: 0;
+  background: transparent;
+  color: var(--gold-hover);
+  border-color: var(--gold);
+  font-size: 13px;
+  padding: 10px 20px;
+}
+.coverage-card-contact .btn-contact:hover { background: var(--gold); color: var(--white); }
 
 /* ── SERVICES SECTION ─────────────────────────────────── */
 .services-section {
