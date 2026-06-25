@@ -1,141 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maclean Insurance | Welcome</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian MacLean | Insurance Advisor | Maclean Insurance</title>
+  <meta name="description" content="Independent insurance planning across Canada. Life, disability, travel, and health coverage — built around your life by Ian MacLean, licensed in 7 provinces." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="navbar">
-        <div class="container nav-content">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.svg" alt="Maclean Insurance Logo" width="36" height="36">
-                Maclean <span>Insurance</span>
-            </a>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Welcome</a>
-                <a href="services.html">Services</a>
-                <div class="dropdown">
-                    <a href="#" style="display:flex; align-items:center;">Products &#9662;</a>
-                    <div class="dropdown-menu">
-                        <a href="https://www.macleaninsurance.com/group-plans" target="_blank">Group Plans</a>
-                        <a href="https://www.macleaninsurance.com/tax-deductible-insurance" target="_blank">Tax Deductible Insurance</a>
-                        <a href="https://www.macleaninsurance.com/universal-life" target="_blank">Universal Life</a>
-                        <a href="https://www.macleaninsurance.com/whole-life-insurance" target="_blank">Whole Life Insurance</a>
-                        <a href="https://www.macleaninsurance.com/gic-brokerage" target="_blank">GIC Brokerage</a>
-                        <a href="https://www.macleaninsurance.com/pilots-loss-of-license-insurance" target="_blank">Pilots Loss of License</a>
-                    </div>
-                </div>
-                <a href="coverage.html">Coverage</a>
-                <a href="calculators.html">Calculators</a>
-                <a href="resources.html">Resources</a>
-                <a href="contact.html" class="btn btn-primary" style="color:white;">Contact Us</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- WELCOME HERO -->
-    <section class="hero-welcome">
-        <div class="container">
-            <div class="hero-welcome-inner">
-                <h1>Welcome to<br>Maclean <span>Insurance</span></h1>
-                <p>Strategic insurance planning tailored to your life, business, and future across Canada. Built upon professional management, rigorous due diligence, and comprehensive risk mitigation.</p>
-                <div class="hero-welcome-actions">
-                    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-                    <a href="services.html" class="btn btn-outline" style="border-color:var(--white); color:var(--white);">Explore Our Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ─── TOP BAR ──────────────────────────────────────────────── -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar-left">
+        <i class="fa-solid fa-shield-halved" style="color:var(--gold);font-size:11px;"></i>
+        Licensed in BC &middot; AB &middot; ON &middot; NB &middot; NS &middot; NL &middot; SK
+      </div>
+      <nav class="topbar-nav">
+        <a href="resources.html">Resources</a>
+        <span class="topbar-divider">&middot;</span>
+        <a href="calculators.html">Calculators</a>
+        <span class="topbar-divider">&middot;</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="topbar-divider">&middot;</span>
+        <a href="tel:6049999999" style="color:var(--gold);">
+          <i class="fa-solid fa-phone" style="font-size:10px;"></i>
+          Call Ian
+        </a>
+      </nav>
+    </div>
+  </div>
 
-    <!-- QUICK COVERAGE LINKS (Requested) -->
-    <section class="coverage-highlights section-padding">
-        <div class="container text-center">
-            <h2 class="mb-2" style="font-size: 2.2rem; color: var(--primary);">Instant Coverage Options</h2>
-            <p class="mb-4" style="color: var(--text-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto 3rem;">Access health, dental, and premium travel insurance with direct quotes from industry-leading partners.</p>
-            
-            <div class="coverage-grid">
-                <div class="coverage-box">
-                    <h3>Green Shield Canada</h3>
-                    <p>Comprehensive quotes and coverage purchases across seven distinct Health & Dental plans tailored specifically for your needs.</p>
-                    <a href="https://mygscadvantage.ca/Quote/AllProducts?mgaid=7538&oid=1316&aid=N0305" target="_blank" class="btn btn-outline">Quote Health & Dental</a>
-                </div>
-                <div class="coverage-box">
-                    <h3>Manulife Travel</h3>
-                    <p>Protect your next journey with reliable, global medical coverage and trip cancellation from one of Canada's top providers.</p>
-                    <a href="https://www.manulife-travel.ca/dist/home.html?as=wlimf" target="_blank" class="btn btn-outline">Quote Travel Insurance</a>
-                </div>
-                <div class="coverage-box">
-                    <h3>Allianz Global</h3>
-                    <p>Secure premium global travel coverage and comprehensive trip protection from Allianz Global's trusted network.</p>
-                    <a href="https://b2c.advisormax.ca/CPF7" target="_blank" class="btn btn-outline">Quote Travel Insurance</a>
-                </div>
-            </div>
+  <!-- ─── MAIN NAV ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="wrap">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M</div>
+        <span class="logo-text">MacLean <span>Insurance</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+          <a>Products <span class="dropdown-arrow">&#9662;</span></a>
+          <div class="dropdown-menu">
+            <a href="https://www.macleaninsurance.com/group-plans" target="_blank">Group Plans</a>
+            <a href="https://www.macleaninsurance.com/tax-deductible-insurance" target="_blank">Tax Deductible Insurance</a>
+            <a href="https://www.macleaninsurance.com/universal-life" target="_blank">Universal Life</a>
+            <a href="https://www.macleaninsurance.com/whole-life-insurance" target="_blank">Whole Life Insurance</a>
+            <a href="https://www.macleaninsurance.com/gic-brokerage" target="_blank">GIC Brokerage</a>
+            <a href="https://www.macleaninsurance.com/pilots-loss-of-license-insurance" target="_blank">Pilots Loss of License</a>
+          </div>
         </div>
-    </section>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary nav-cta" style="padding:9px 20px;font-size:13px;">Book a Consultation</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- ABOUT SUMMARY -->
-    <section class="section-padding bg-light">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-text">
-                    <h2>Professional Management & Integrity</h2>
-                    <p>The financial products and services offered through my association with Customplan Financial Advisors Inc. are of the highest quality available in today’s marketplace. We have formed unique strategic alliances with other industry leaders.</p>
-                    <p>We assist our clients in developing superior managed portfolios with creative tax-assisted benefits, security, liquidity, and increased potential for long-term growth.</p>
-                    
-                    <div class="values-grid">
-                        <div class="value-card">
-                            <h3>Due Diligence</h3>
-                            <p>Thorough processes evaluating tailored financial opportunities to definitively benefit our clients.</p>
-                        </div>
-                        <div class="value-card">
-                            <h3>Strategic Partners</h3>
-                            <p>Stringent standards evaluating financial strength, historical performance, and premier customer service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="img-placeholder">
-                        <img src="assets/logo.svg" alt="M" width="80" style="margin-bottom:1.5rem;">
-                        <span>Ian Maclean</span>
-                        <p>Licensed in BC, AB, ON, NB, NS, NL, SK</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>Ian Maclean</h4>
-                    <p>Providing quality professional advice and superior managed portfolios across Canada.</p>
-                </div>
-                <div>
-                    <h4>Navigation</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Welcome</a>
-                        <a href="services.html">Our Services</a>
-                        <a href="coverage.html">Health & Travel Coverage</a>
-                        <a href="calculators.html">Financial Calculators</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Regulatory Disclosure</h4>
-                    <p>Financial products and services offered by my association with Customplan Financial Advisors Inc. All products and services are competitively priced and distinguished by leading edge features and value added benefits.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Maclean Insurance. All Rights Reserved.</p>
-            </div>
+  <!-- ─── 1. HERO ───────────────────────────────────────────────── -->
+  <section class="ip-hero" aria-label="Primary hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-ring"></div>
+
+    <div class="hero-content wrap">
+      <div class="hero-kicker">Canada's Independent Insurance Advisor</div>
+      <h1>Protecting<br /><em style="font-style:italic;font-weight:400;">What Matters Most.</em></h1>
+      <p>Life doesn't come with guarantees — but your coverage can. Ian MacLean delivers independent, expert insurance advice to Canadians coast to coast, with no agenda other than yours.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Book a Free Consultation</a>
+        <a href="#coverage" class="btn btn-secondary">Get Coverage Now &darr;</a>
+      </div>
+    </div>
+
+    <div class="hero-badge">
+      <span class="number">7</span>
+      <span class="label">Provinces<br />Licensed</span>
+    </div>
+  </section>
+
+
+  <!-- ─── 2. ABOUT IAN ──────────────────────────────────────────── -->
+  <section class="about-section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="about-grid">
+
+        <div class="about-text">
+          <div class="kicker">About Your Advisor</div>
+          <h2 id="about-title">A Lifetime of Putting<br /><em style="font-style:italic;font-weight:400;">Clients First.</em></h2>
+          <p class="about-lead">Ian MacLean is one of Canada's most experienced independent insurance advisors, with a career built on a single principle: the right advice, for the right person, at the right time — with no strings attached.</p>
+          <p style="font-size:.95rem;color:var(--text-light);line-height:1.8;margin-bottom:1rem;">Working through Customplan Financial Advisors Inc., Ian has spent decades helping Canadians navigate the sometimes overwhelming landscape of life, health, disability, and travel insurance. He takes the time to understand your complete picture before recommending anything — because real protection is personal.</p>
+          <p style="font-size:.95rem;color:var(--text-light);line-height:1.8;margin-bottom:1.5rem;">Licensed across seven provinces, Ian brings a truly national perspective to every conversation. Whether you're a family protecting your income, a professional managing risk, or someone who's been turned down elsewhere, Ian has the market access and the experience to find the right solution.</p>
+
+          <div class="about-chips">
+            <span class="about-chip">7-Province Licensing</span>
+            <span class="about-chip">Customplan Financial Advisors</span>
+            <span class="about-chip">Independent Advice</span>
+            <span class="about-chip">All Major Carriers</span>
+            <span class="about-chip">No Quotas</span>
+          </div>
+
+          <a href="contact.html" class="btn btn-outline" style="color:var(--blue);border-color:var(--blue);">
+            <i class="fa-regular fa-calendar"></i> Schedule a Conversation
+          </a>
         </div>
-    </footer>
+
+        <div class="about-visual">
+          <div class="about-image-wrap">
+            <img
+              src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
+              alt="Ian MacLean — Insurance Advisor"
+              style="width:100%;height:100%;object-fit:cover;"
+              onerror="this.style.display='none'"
+            />
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--navy-mid),var(--navy-light));color:var(--white);padding:3rem;text-align:center;">
+              <i class="fa-solid fa-shield-halved" style="font-size:3.5rem;color:var(--gold);margin-bottom:1.5rem;"></i>
+              <span style="font-family:var(--font-head);font-size:2rem;font-weight:600;display:block;margin-bottom:.5rem;">Ian MacLean</span>
+              <span style="font-size:13px;color:var(--gold);font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Insurance Advisor</span>
+              <p style="font-size:.85rem;color:rgba(255,255,255,.6);margin-top:1rem;">Licensed across Canada since the 1990s</p>
+            </div>
+          </div>
+          <div class="about-credentials">
+            <div class="cred-name">Ian MacLean</div>
+            <div class="cred-title">Insurance Advisor · Customplan</div>
+            <div class="cred-provinces">BC · AB · ON · NB · NS · NL · SK</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── 3. WHY CHOOSE IAN ──────────────────────────────────────── -->
+  <section class="why-section" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="why-header">
+        <div class="kicker" style="justify-content:center;">Why Choose Ian</div>
+        <h2 id="why-title">Independent Advice.<br />National Reach. Real Relationships.</h2>
+        <p>Every client gets the same thing: Ian's undivided attention, the broadest market access in the industry, and a plan that's genuinely built around their life.</p>
+      </div>
+      <div class="why-grid">
+
+        <article class="why-card">
+          <img class="why-card-img" src="https://images.pexels.com/photos/2422277/pexels-photo-2422277.jpeg" alt="Independent advisor meeting" />
+          <div class="why-card-body">
+            <h3>Truly Independent</h3>
+            <p>No quotas, no institutional bias, no single-carrier constraints. Ian shops the full Canadian market to find you the best fit — not the most convenient one.</p>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <img class="why-card-img" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Canada map — coast to coast service" />
+          <div class="why-card-body">
+            <h3>Licensed Coast to Coast</h3>
+            <p>Licensed in British Columbia, Alberta, Ontario, New Brunswick, Nova Scotia, Newfoundland, and Saskatchewan — Ian can serve you wherever life takes you.</p>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <img class="why-card-img" src="https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg" alt="Experience and education" />
+          <div class="why-card-body">
+            <h3>Experience You Can Trust</h3>
+            <p>Decades of practice mean Ian has seen virtually every situation. Complex health histories, hard-to-insure cases, corporate structures — nothing is too complicated.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── 4. INSTANT COVERAGE LINKS ─────────────────────────────── -->
+  <section class="coverage-section" id="coverage" aria-labelledby="coverage-title">
+    <div class="wrap">
+
+      <div class="coverage-header">
+        <div class="kicker">Ian's Direct Coverage Links</div>
+        <h2 id="coverage-title">Get Covered. Right Now.</h2>
+        <p>Ian has set up direct quote portals with Canada's leading insurers. Get an instant quote or purchase coverage in minutes — all through Ian's personal advisor links.</p>
+      </div>
+
+      <div class="coverage-grid">
+
+        <!-- Travel Insurance — Manulife -->
+        <div class="coverage-card">
+          <div class="coverage-icon">✈️</div>
+          <h3>Travel Insurance</h3>
+          <div class="provider-label">Manulife Travel</div>
+          <p>Comprehensive trip medical, emergency evacuation, and travel cancellation coverage from one of Canada's most trusted insurers. Quote and buy in minutes.</p>
+          <a href="https://www.manulife-travel.ca/dist/home.html?as=wlimf" target="_blank" rel="noopener" class="btn">
+            Quote Travel Insurance <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
+          </a>
+        </div>
+
+        <!-- Travel Insurance — Allianz -->
+        <div class="coverage-card">
+          <div class="coverage-icon">🌐</div>
+          <h3>Travel Insurance</h3>
+          <div class="provider-label">Allianz Global</div>
+          <p>Premium global travel protection with comprehensive medical coverage, trip interruption, and 24/7 emergency assistance from a world leader in travel insurance.</p>
+          <a href="https://b2c.advisormax.ca/CPF7" target="_blank" rel="noopener" class="btn">
+            Quote Travel Insurance <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
+          </a>
+        </div>
+
+        <!-- Health & Dental — Green Shield -->
+        <div class="coverage-card">
+          <div class="coverage-icon">🦷</div>
+          <h3>Health &amp; Dental</h3>
+          <div class="provider-label">Green Shield Canada</div>
+          <p>Individual and family health &amp; dental plans across seven plan options — from basic prescription coverage to comprehensive vision, dental, and extended health.</p>
+          <a href="https://mygscadvantage.ca/Quote/AllProducts?mgaid=7538&oid=1316&aid=N0305" target="_blank" rel="noopener" class="btn">
+            Quote Health &amp; Dental <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
+          </a>
+        </div>
+
+        <!-- Life Insurance — Amore -->
+        <div class="coverage-card" style="grid-column: span 1;">
+          <div class="coverage-icon">❤️</div>
+          <h3>Life Insurance</h3>
+          <div class="provider-label">Amore · Via Ian MacLean</div>
+          <p>Term, whole life, and universal life insurance from Canada's top carriers. Use Ian's personal Amore portal to get a real quote and start an application instantly.</p>
+          <a href="https://amore.riskdx.ca/sales/quote/personal?agent=Ian%20MacLean&ln=en" target="_blank" rel="noopener" class="btn">
+            Quote Life Insurance <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
+          </a>
+        </div>
+
+        <!-- All Quotes — Contact Ian -->
+        <div class="coverage-card" style="background:rgba(197,160,89,.08);border-color:rgba(197,160,89,.25);">
+          <div class="coverage-icon" style="background:rgba(197,160,89,.2);border-color:rgba(197,160,89,.3);">💬</div>
+          <h3>Not Sure Where to Start?</h3>
+          <div class="provider-label">Talk to Ian Directly</div>
+          <p>Every situation is different. If you'd prefer to talk it through before committing to a quote, Ian is available for a no-cost, no-obligation consultation.</p>
+          <a href="contact.html" class="btn" style="background:transparent;border-color:rgba(197,160,89,.5);color:var(--gold);">
+            Contact Ian <i class="fa-solid fa-arrow-right" style="font-size:11px;"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── 5. SERVICES ───────────────────────────────────────────── -->
+  <section class="services-section" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="services-header">
+        <div class="kicker">Our Services</div>
+        <h2 id="services-title">Coverage for Every Stage of Life</h2>
+        <p>From protecting your income today to securing your family's future, Ian builds comprehensive coverage strategies that grow with you.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-card-bar"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Protection</div>
+            <h3>Life Insurance</h3>
+            <p>Term, whole life, and universal life coverage — structured to protect your family and maximize long-term value in your estate.</p>
+            <a href="services.html" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card-bar"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Income Protection</div>
+            <h3>Disability Insurance</h3>
+            <p>Your most valuable asset is your ability to earn. Short and long-term disability coverage keeps your life on track if you can't work.</p>
+            <a href="services.html" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card-bar"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Health</div>
+            <h3>Critical Illness</h3>
+            <p>A lump-sum payment if you're diagnosed with a serious illness — giving you the financial freedom to focus entirely on recovery.</p>
+            <a href="services.html" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card-bar" style="background:linear-gradient(180deg,var(--gold),var(--gold-hover));"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Group</div>
+            <h3>Group Benefits Plans</h3>
+            <p>Attract and retain talent with comprehensive group health, dental, and life coverage — structured to minimize cost and maximize value.</p>
+            <a href="https://www.macleaninsurance.com/group-plans" target="_blank" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card-bar" style="background:linear-gradient(180deg,var(--gold),var(--gold-hover));"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Travel</div>
+            <h3>Travel Insurance</h3>
+            <p>Emergency medical, trip cancellation, and baggage protection for every trip — from a weekend in Seattle to a year abroad.</p>
+            <a href="coverage.html" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card-bar" style="background:linear-gradient(180deg,var(--gold),var(--gold-hover));"></div>
+          <div class="service-card-body">
+            <div class="service-card-type">Advanced</div>
+            <h3>Tax-Assisted Strategies</h3>
+            <p>Corporate-owned insurance, insured annuities, and estate-bond strategies that reduce tax while building long-term wealth.</p>
+            <a href="https://www.macleaninsurance.com/tax-deductible-insurance" target="_blank" class="link">Explore <i class="fa-solid fa-arrow-right" style="font-size:10px;"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── 6. CTA ─────────────────────────────────────────────────── -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div class="cta-inner">
+        <div class="kicker" style="justify-content:center;">Your Next Step</div>
+        <h2 id="cta-title">Let's find the right coverage for you.</h2>
+        <p>A complimentary conversation with Ian costs nothing and could change everything. In 20 minutes, you'll have a clear picture of where you stand and what comes next.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-regular fa-calendar"></i> Book a Consultation
+          </a>
+          <a href="calculators.html" class="btn btn-ghost">
+            Use a Calculator
+          </a>
+        </div>
+        <div class="cta-chips">
+          <span class="cta-chip">No Cost</span>
+          <span class="cta-chip">No Obligation</span>
+          <span class="cta-chip">Independent Advice</span>
+          <span class="cta-chip">Across Canada</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="wrap">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;">
+            <div class="logo-icon" style="width:34px;height:34px;font-size:16px;">M</div>
+            <span style="font-family:var(--font-head);font-size:1.3rem;font-weight:600;color:var(--white);">MacLean <span style="color:var(--gold);">Insurance</span></span>
+          </div>
+          <p>Independent insurance advice across Canada, delivered with integrity and experience.</p>
+          <div class="footer-contact" style="margin-top:1.5rem;">
+            <div class="item">
+              <i class="fa-solid fa-phone" style="color:var(--gold);font-size:12px;margin-top:2px;flex-shrink:0;"></i>
+              <a href="tel:6049999999">Call Ian</a>
+            </div>
+            <div class="item">
+              <i class="fa-regular fa-envelope" style="color:var(--gold);font-size:12px;margin-top:2px;flex-shrink:0;"></i>
+              <a href="contact.html">Send a Message</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h4>Navigation</h4>
+          <nav class="footer-links">
+            <a href="about.html">About Ian</a>
+            <a href="services.html">Services</a>
+            <a href="coverage.html">Coverage Options</a>
+            <a href="calculators.html">Calculators</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <h4>Products</h4>
+          <nav class="footer-links">
+            <a href="https://www.macleaninsurance.com/group-plans" target="_blank">Group Plans</a>
+            <a href="https://www.macleaninsurance.com/tax-deductible-insurance" target="_blank">Tax Deductible Insurance</a>
+            <a href="https://www.macleaninsurance.com/universal-life" target="_blank">Universal Life</a>
+            <a href="https://www.macleaninsurance.com/whole-life-insurance" target="_blank">Whole Life Insurance</a>
+            <a href="https://www.macleaninsurance.com/gic-brokerage" target="_blank">GIC Brokerage</a>
+            <a href="https://www.macleaninsurance.com/pilots-loss-of-license-insurance" target="_blank">Pilots Loss of License</a>
+          </nav>
+        </div>
+
+        <!-- Regulatory -->
+        <div>
+          <h4>Regulatory Disclosure</h4>
+          <p>Financial products and services offered through association with <strong style="color:rgba(255,255,255,.8);">Customplan Financial Advisors Inc.</strong> All products are competitively priced and distinguished by leading-edge features and value-added benefits.</p>
+          <p style="margin-top:1rem;">Ian MacLean is licensed to sell insurance in British Columbia, Alberta, Ontario, New Brunswick, Nova Scotia, Newfoundland &amp; Labrador, and Saskatchewan.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> MacLean Insurance. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+          <a href="resources.html">Resources</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
 </body>
 </html>
